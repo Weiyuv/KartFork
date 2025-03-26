@@ -32,7 +32,7 @@ public class Weapon : MonoBehaviour
         if (guided && target == null)
         {
             Collider[] hits;
-            hits = Physics.OverlapSphere(transform.position + transform.forward * 10, 10);
+            hits = Physics.OverlapSphere(transform.position + transform.forward * 15, 20);
 
             foreach (Collider col in hits)
             {
@@ -46,16 +46,12 @@ public class Weapon : MonoBehaviour
 
                 }
             }
-
         }
-        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-
-      
         //keep the height of the weapon constant relative to the ground
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, 100))
@@ -74,7 +70,5 @@ public class Weapon : MonoBehaviour
             GetComponent<Rigidbody>().linearVelocity = GetComponent<Rigidbody>().linearVelocity.normalized * velocity;
 
         }
-
-       
     }
 }
