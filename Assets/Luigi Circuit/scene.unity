@@ -2999,10 +2999,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: 3002cc73-cfbb-487d-be04-cb7a143eb353
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -3461,10 +3471,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: 67f4f192-1243-4bb3-8fac-03ca0788d477
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -4963,7 +4983,7 @@ PrefabInstance:
     - target: {fileID: 2127035410756211601, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2127035410756211601, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -5062,10 +5082,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1495551348}
-    - targetCorrespondingSourceObject: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1495551356}
   m_SourcePrefab: {fileID: 100100000, guid: 848963e5fc7b10445b3a8f7595625c50, type: 3}
 --- !u!4 &857950405 stripped
 Transform:
@@ -6644,10 +6660,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: 273daf1c-8754-48e7-9062-c3114b586f7e
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -7274,10 +7300,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: d16b1079-8a2e-4b53-b12e-ec784b584ce0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -8267,21 +8303,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arcadeKart: {fileID: 0}
---- !u!114 &1495551356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495551340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayfather: {fileID: 841867186}
-  isFollowing: 1
-  distanceToWaypoint: 10
 --- !u!64 &1499753275
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9144,10 +9165,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: b13d2ab7-a26f-4e5d-b6f9-57739f913d50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
@@ -9371,10 +9402,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: KartF1_Player P2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_Id
       value: 00eb1951-3650-460d-9a35-f872d118617c
+      objectReference: {fileID: 0}
+    - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7434428058399933895, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
