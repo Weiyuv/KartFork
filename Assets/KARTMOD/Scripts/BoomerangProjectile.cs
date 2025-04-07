@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BoomerangProjectile : MonoBehaviour
 {
-    public float speed = 15f;
+    public float speed = 150f;
     public int maxBounces = 3;
     private int bounceCount = 0;
     private Rigidbody rb;

@@ -44,7 +44,7 @@ public class Damage : MonoBehaviour
         {
             StartCoroutine(spin());
 
-            Destroy(collision.gameObject);
+           
         }
     }
 }
