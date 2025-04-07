@@ -2,62 +2,40 @@ using UnityEngine;
 
 public class BoomerangProjectile : MonoBehaviour
 {
-    public float speed = 10f;
-    public float returnDelay = 1.5f;
-    private Vector3 startPosition;
-    private bool returning = false;
-    private Rigidbody rb;
-    private GameObject owner;
-    private Collider ownerCollider;
+    public float radius = 2f;
+    public float rotationSpeed = 180f;
+    public float duration = 3f;
+    public Transform centerPoint; // Pode ser deixado vazio pra usar Vector3.zero
+
+    private float angle;
+    private float timer;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        startPosition = transform.position;
+        if (centerPoint == null)
+            centerPoint = new GameObject("BoomerangCenter").transform;
 
-        rb.linearVelocity = transform.forward * speed;
+        centerPoint.position = Vector3.zero; // Ou qualquer ponto fixo desejado
 
-        // Garante que o projétil não colida com o dono
-        if (owner != null)
+        angle = 0f;
+        timer = 0f;
+
+        Vector3 offset = new Vector3(radius, 0f, 0f);
+        transform.position = centerPoint.position + offset;
+    }
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer > duration)
         {
-            ownerCollider = owner.GetComponent<Collider>();
-            Collider thisCollider = GetComponent<Collider>();
-
-            if (ownerCollider != null && thisCollider != null)
-            {
-                Physics.IgnoreCollision(thisCollider, ownerCollider);
-            }
-        }
-
-        Invoke(nameof(StartReturn), returnDelay);
-    }
-
-    void StartReturn()
-    {
-        returning = true;
-    }
-
-    void FixedUpdate()
-    {
-        if (returning && owner != null)
-        {
-            Vector3 dirToOwner = (owner.transform.position - transform.position).normalized;
-            rb.linearVelocity = dirToOwner * speed;
-        }
-    }
-
-    public void SetOwner(GameObject user)
-    {
-        owner = user;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        // Ignora colisão com o dono
-        if (collision.gameObject == owner)
+            Destroy(gameObject);
             return;
+        }
 
-        // Aqui você pode colocar efeitos, dano, etc.
-        Destroy(gameObject);
+        angle += rotationSpeed * Time.deltaTime;
+        float rad = angle * Mathf.Deg2Rad;
+        Vector3 offset = new Vector3(Mathf.Cos(rad), 0f, Mathf.Sin(rad)) * radius;
+        transform.position = centerPoint.position + offset;
     }
 }
