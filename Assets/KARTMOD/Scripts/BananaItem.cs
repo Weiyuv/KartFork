@@ -7,7 +7,8 @@ public class BananaItem : ItemBase
 
     public override void Use(GameObject user)
     {
-        Vector3 spawnPos = user.transform.position - user.transform.forward;
+        // Aumentamos a distância para 2 metros atrás do jogador
+        Vector3 spawnPos = user.transform.position - user.transform.forward * 2f;
         GameObject.Instantiate(bananaPrefab, spawnPos, Quaternion.identity);
     }
 }
