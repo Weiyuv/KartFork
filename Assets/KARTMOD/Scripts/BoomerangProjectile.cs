@@ -2,40 +2,35 @@ using UnityEngine;
 
 public class BoomerangProjectile : MonoBehaviour
 {
-    public float radius = 2f;
-    public float rotationSpeed = 180f;
-    public float duration = 3f;
-    public Transform centerPoint; // Pode ser deixado vazio pra usar Vector3.zero
-
-    private float angle;
-    private float timer;
+    public float speed = 15f;
+    public int maxBounces = 3;
+    private int bounceCount = 0;
+    private Rigidbody rb;
 
     void Start()
     {
-        if (centerPoint == null)
-            centerPoint = new GameObject("BoomerangCenter").transform;
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+        {
+            Debug.LogError("Rigidbody não encontrado no Boomerang.");
+            return;
+        }
 
-        centerPoint.position = Vector3.zero; // Ou qualquer ponto fixo desejado
-
-        angle = 0f;
-        timer = 0f;
-
-        Vector3 offset = new Vector3(radius, 0f, 0f);
-        transform.position = centerPoint.position + offset;
+        rb.linearVelocity = transform.forward * speed;
     }
 
-    void Update()
+    void OnCollisionEnter(Collision collision)
     {
-        timer += Time.deltaTime;
-        if (timer > duration)
+        bounceCount++;
+
+        if (bounceCount >= maxBounces)
         {
             Destroy(gameObject);
             return;
         }
 
-        angle += rotationSpeed * Time.deltaTime;
-        float rad = angle * Mathf.Deg2Rad;
-        Vector3 offset = new Vector3(Mathf.Cos(rad), 0f, Mathf.Sin(rad)) * radius;
-        transform.position = centerPoint.position + offset;
+        // Ricochetear: refletir a direção
+        Vector3 reflectDir = Vector3.Reflect(rb.linearVelocity.normalized, collision.contacts[0].normal);
+        rb.linearVelocity = reflectDir * speed;
     }
 }

@@ -94,11 +94,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aca056aacf01abc42a89083f70c055b1,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8214047516636846720}
+      addedObject: {fileID: -753974358905223854}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: aca056aacf01abc42a89083f70c055b1,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: -753974358905223854}
+      addedObject: {fileID: 7232225163137539092}
   m_SourcePrefab: {fileID: 100100000, guid: aca056aacf01abc42a89083f70c055b1, type: 3}
 --- !u!1 &3103295238132636444 stripped
 GameObject:
@@ -127,7 +127,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.023231633
   m_Center: {x: 0.0019496046, y: -0.00016505175, z: 0}
---- !u!54 &8214047516636846720
+--- !u!114 &-753974358905223854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3103295238132636444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9f73cf880fd4745b685bf5655f50bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  maxRicochets: 3
+--- !u!54 &7232225163137539092
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,19 +168,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-753974358905223854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3103295238132636444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9f73cf880fd4745b685bf5655f50bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orbitRadius: 3
-  orbitSpeed: 360
-  orbitHeight: 3
-  orbitDuration: 4
