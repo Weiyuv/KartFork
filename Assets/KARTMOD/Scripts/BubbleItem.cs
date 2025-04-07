@@ -8,7 +8,8 @@ public class BubbleItem : ItemBase
 
     public override void Use(GameObject user)
     {
-        Vector3 spawnPos = user.transform.position + user.transform.forward * 2f + Vector3.up * 0.5f;
+        // Afastando mais no forward e subindo mais no eixo Y
+        Vector3 spawnPos = user.transform.position + user.transform.forward * 10f + Vector3.up * 1.5f;
         Quaternion rotation = user.transform.rotation;
 
         GameObject bubble = GameObject.Instantiate(bubblePrefab, spawnPos, rotation);
@@ -17,11 +18,11 @@ public class BubbleItem : ItemBase
         if (rb != null)
         {
             rb.linearVelocity = user.transform.forward * launchForce;
-            Debug.Log("Bolha lan�ada com velocidade: " + rb.linearVelocity);
+            Debug.Log("Bolha lançada com velocidade: " + rb.linearVelocity);
         }
         else
         {
-            Debug.LogWarning("Rigidbody n�o encontrado na bolha.");
+            Debug.LogWarning("Rigidbody não encontrado na bolha.");
         }
     }
 }
