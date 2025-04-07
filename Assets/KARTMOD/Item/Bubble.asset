@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   icon: {fileID: 0}
-  bubblePrefab: {fileID: 0}
+  bubblePrefab: {fileID: 4741458030882137062, guid: 440b32fc459b70f4ab7310c792821ad5,
+    type: 3}
   launchForce: 30
