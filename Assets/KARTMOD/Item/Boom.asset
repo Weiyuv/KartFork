@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: 
   icon: {fileID: 0}
-  boomerangPrefab: {fileID: 7533200408023306045, guid: 8b102e97294566b41a10e62859fe399b,
+  boomerangPrefab: {fileID: 3103295238132636444, guid: 8b102e97294566b41a10e62859fe399b,
     type: 3}
-  launchForce: 20
-  returnDelay: 1.5
