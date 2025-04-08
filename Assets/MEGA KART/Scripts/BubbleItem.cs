@@ -4,7 +4,7 @@ using UnityEngine;
 public class BubbleItem : ItemBase
 {
     public GameObject bubblePrefab;
-    public float launchForce = 300f;
+    public float launchForce = 400f;
 
     public override void Use(GameObject user)
     {
