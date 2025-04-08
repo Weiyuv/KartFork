@@ -4,11 +4,18 @@ using UnityEngine;
 public class FolhaItem : ItemBase
 {
     public GameObject folhaPrefab;
-    public float duration = 5f;
+    public int quantidade = 3;
+    public float duracao = 5f;
 
     public override void Use(GameObject user)
     {
-        GameObject folha = Instantiate(folhaPrefab, user.transform.position + Vector3.up * 2f, Quaternion.identity);
-        folha.GetComponent<FolhaOrbit>().Initialize(user.transform, duration);
+        for (int i = 0; i < quantidade; i++)
+        {
+            GameObject folha = Instantiate(folhaPrefab);
+            FolhaOrbit orbit = folha.GetComponent<FolhaOrbit>();
+
+            float angulo = (360f / quantidade) * i;
+            orbit.Initialize(user.transform, duracao, angulo);
+        }
     }
 }

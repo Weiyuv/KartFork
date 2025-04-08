@@ -4,16 +4,27 @@ public class FolhaOrbit : MonoBehaviour
 {
     private Transform target;
     private float timer;
-    private float orbitSpeed = 180f; // graus por segundo
-    private float radius = 2f;
+    private float orbitSpeed = 180f;
+    private float radius = 5f;
+    private float angle;
 
-    private Vector3 offset;
-
-    public void Initialize(Transform player, float duration)
+    public void Initialize(Transform player, float duration, float startAngle)
     {
         target = player;
         timer = duration;
-        offset = new Vector3(radius, 0, 0); // começa à direita
+        angle = startAngle;
+
+        // Posição inicial com ângulo
+        Vector3 offset = Quaternion.Euler(0, angle, 0) * Vector3.right * radius;
+        transform.position = target.position + offset;
+
+        // Ignorar colisão com o jogador
+        Collider folhaCol = GetComponent<Collider>();
+        Collider playerCol = player.GetComponent<Collider>();
+        if (folhaCol != null && playerCol != null)
+        {
+            Physics.IgnoreCollision(folhaCol, playerCol);
+        }
     }
 
     void Update()
@@ -31,7 +42,9 @@ public class FolhaOrbit : MonoBehaviour
             return;
         }
 
-        // Rotação ao redor do player
-        transform.RotateAround(target.position, Vector3.up, orbitSpeed * Time.deltaTime);
+        // Atualiza o ângulo e posição ao redor do jogador
+        angle += orbitSpeed * Time.deltaTime;
+        Vector3 offset = Quaternion.Euler(0, angle, 0) * Vector3.right * radius;
+        transform.position = target.position + offset;
     }
 }

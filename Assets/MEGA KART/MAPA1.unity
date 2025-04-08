@@ -28991,7 +28991,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527776664}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75796881a1474ab4abe34426c24d816d, type: 3}
   m_Name: 
@@ -32162,11 +32162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possibleItems:
-  - {fileID: 11400000, guid: 2cef1d4055714fa40bcdead4b3561a44, type: 2}
-  - {fileID: 11400000, guid: feab33f15f9f8ad489dc4ce045c05348, type: 2}
-  - {fileID: 11400000, guid: 4988b887c3dfe2645a086533d2b24a54, type: 2}
-  - {fileID: 11400000, guid: 7e4675f9f1c282448ac3f6632cd3f1fd, type: 2}
-  - {fileID: 11400000, guid: c9d522a631d0b4c45b7a5f2f92da2392, type: 2}
+  - {fileID: 11400000, guid: e358c05f273568441aaff586b3ca5447, type: 2}
+  - {fileID: 0}
 --- !u!65 &1668942242
 BoxCollider:
   m_ObjectHideFlags: 0
