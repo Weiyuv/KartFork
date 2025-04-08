@@ -3,10 +3,11 @@ using UnityEngine;
 public class ItemHolder : MonoBehaviour
 {
     public ItemBase currentItem;
+    public string useButton = "shoot1"; // Você pode trocar no Inspector
 
     void Update()
     {
-        if (currentItem != null && Input.GetKeyDown(KeyCode.Space))
+        if (currentItem != null && Input.GetButtonDown(useButton))
         {
             UseItem();
         }
