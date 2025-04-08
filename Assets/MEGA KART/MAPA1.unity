@@ -10074,6 +10074,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -10137,7 +10142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &489385747
@@ -12171,6 +12176,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -12234,7 +12244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &596001026
@@ -22535,6 +22545,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -22598,7 +22613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &1221640342
@@ -25024,6 +25039,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -25087,7 +25107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &1330723494
@@ -31647,6 +31667,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -31710,7 +31735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &1656534917
@@ -32588,6 +32613,11 @@ PrefabInstance:
     - target: {fileID: 2127035410756211605, guid: 848963e5fc7b10445b3a8f7595625c50,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2932371900091091569, guid: 848963e5fc7b10445b3a8f7595625c50,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695239988245930816, guid: 848963e5fc7b10445b3a8f7595625c50,
@@ -32651,7 +32681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf23846af2ac0b4f8e73ec436d260bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayfather: {fileID: 0}
+  wayfather: {fileID: 642032621}
   isFollowing: 1
   distanceToWaypoint: 10
 --- !u!114 &1679774538

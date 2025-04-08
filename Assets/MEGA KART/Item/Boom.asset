@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Boom
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 55f71d9e9e8321f4b9635517d34dc9af, type: 3}
   boomerangPrefab: {fileID: 3103295238132636444, guid: 8b102e97294566b41a10e62859fe399b,
     type: 3}

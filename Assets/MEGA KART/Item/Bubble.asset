@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bubble
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 89df7dd3cc065fe4c83be3776cbb8fd1, type: 3}
   bubblePrefab: {fileID: 4741458030882137062, guid: 440b32fc459b70f4ab7310c792821ad5,
     type: 3}
   launchForce: 30

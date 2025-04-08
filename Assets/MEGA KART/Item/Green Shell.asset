@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Green Shell
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 2e106ea02736de74eaf10c066ffdb60e, type: 3}
   shellPrefab: {fileID: 492887514356201398, guid: 49274c762342fac4c912d15f8b291b7a,
     type: 3}

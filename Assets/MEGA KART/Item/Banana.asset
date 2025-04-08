@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Banana
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 94d65b7bcb1d3404c842ab8951bfe1a9, type: 3}
   bananaPrefab: {fileID: 2501028571958710710, guid: 24fb3086d4ec30841aa7c79955f46376,
     type: 3}
