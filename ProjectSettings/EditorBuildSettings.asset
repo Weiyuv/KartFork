@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/X/Karting/Scenes/IntroMenu.unity
+    path: Assets/MEGA KART/IntroMenu.unity
     guid: d29260d8d84c94bd7ac95807b3da99d4
   - enabled: 1
     path: Assets/MEGA KART/MAPA2.unity
@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/MEGA KART/MAPA1.unity
     guid: e458158cd0802cd4ea98d6210709ad32
   - enabled: 1
-    path: Assets/X/Karting/Scenes/WinScene.unity
+    path: Assets/MEGA KART/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
