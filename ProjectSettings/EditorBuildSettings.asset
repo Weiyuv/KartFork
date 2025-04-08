@@ -6,22 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NOMOD/Karting/Scenes/IntroMenu.unity
+    path: Assets/X/Karting/Scenes/IntroMenu.unity
     guid: d29260d8d84c94bd7ac95807b3da99d4
   - enabled: 1
-    path: Assets/PUC KART MOD/asset/MAPA2.unity
+    path: Assets/KART MOD/MAPA2.unity
     guid: 7e0d28f2b657bc4428f7be71b0a80c6d
   - enabled: 0
-    path: Assets/NOMOD/Karting/Scenes/MainScene.unity
+    path: Assets/X/Karting/Scenes/MainScene.unity
     guid: 92786e23da2af4a4f8803aaf44c47121
   - enabled: 0
-    path: Assets/NOMOD/Karting/Scenes/LoseScene.unity
+    path: Assets/X/Karting/Scenes/LoseScene.unity
     guid: 9c449e01147824b419cda406398fb2e7
   - enabled: 1
-    path: Assets/PUC KART MOD/asset/MAPA1.unity
+    path: Assets/KART MOD/MAPA1.unity
     guid: e458158cd0802cd4ea98d6210709ad32
   - enabled: 1
-    path: Assets/NOMOD/Karting/Scenes/WinScene.unity
+    path: Assets/X/Karting/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
